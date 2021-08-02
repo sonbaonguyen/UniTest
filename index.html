@@ -1,0 +1,83 @@
+<html>
+
+<head>
+    <title>Drum Pad Machine</title>
+    <link rel="stylesheet" href="drumCss.css" />
+    <link rel="icon"
+        href="https://img.captain-droid.com/wp-content/uploads/2018/10/com-agminstruments-drumpadmachine-icon.png.webp" />
+    <script src="https://kit.fontawesome.com/f8ca472852.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+    <div class="smallContainer animatedIcon">
+        <i id="ani" class="fas fa-music"></i>
+        <i id="ani2" class="fas fa-music"></i>
+        <i id="ani3" class="fas fa-music"></i>
+    </div>
+    <div class="smallContainer">
+        <div class="myPad" id="pad1">
+            <!-- <button class="myTap" id="loop" type="button" data-key="73">G</button>
+        <audio data-key="73" src="./audio/loop.mp3" id="audio"></audio> -->
+
+            <button class="myTap green" type="button" data-key="69">E</button>
+            <button class="myTap green" type="button" data-key="82">R</button>
+            <button class="myTap green" type="button" data-key="84">T</button>
+            <audio data-key="69" src="./audio/E.mp3" id="audio"></audio>
+            <audio data-key="82" src="./audio/R.mp3" id="audio"></audio>
+            <audio data-key="84" src="./audio/T.mp3" id="audio"></audio>
+
+            <button class="myTap blue" type="button" data-key="68">D</button>
+            <button class="myTap blue" type="button" data-key="70">F</button>
+            <button class="myTap blue" type="button" data-key="71">G</button>
+            <audio data-key="68" src="./audio/D.mp3" id="audio"></audio>
+            <audio data-key="70" src="./audio/F.mp3" id="audio"></audio>
+            <audio data-key="71" src="./audio/G.mp3" id="audio"></audio>
+
+            <button class="myTap yellow" type="button" data-key="67">C</button>
+            <button class="myTap yellow" type="button" data-key="86">V</button>
+            <button class="myTap yellow" type="button" data-key="66">B</button>
+            <audio data-key="67" src="./audio/C.mp3" id="audio"></audio>
+            <audio data-key="86" src="./audio/V.mp3" id="audio"></audio>
+            <audio data-key="66" src="./audio/B.mp3" id="audio"></audio>
+
+            <button class="myTap purple" type="button" data-key="75">Drum</button>
+            <button class="myTap purple" type="button" data-key="76">HiHat</button>
+            <button class="myTap purple" type="button" data-key="186">Snare</button>
+            <audio data-key="75" src="./audio/CROOKERSryekick.wav" id="audio"></audio>
+            <audio data-key="76" src="./audio/CROOKhatty.wav" id="audio"></audio>
+            <audio data-key="186" src="./audio/snare.mp3" id="audio"></audio>
+        </div>
+        <div class="mySecondPad" id="pad2">
+            <!-- <button class="myTap" id="loop" type="button" data-key="73">G</button>
+        <audio data-key="73" src="./audio/loop.mp3" id="audio"></audio> -->
+
+            <button class="secondTap green" type="button" data-key="103">7</button>
+            <button class="secondTap green" type="button" data-key="104">8</button>
+            <button class="secondTap green" type="button" data-key="105">9</button>
+            <audio data-key="103" src="./audio/E.mp3" id="audio"></audio>
+            <audio data-key="104" src="./audio/R.mp3" id="audio"></audio>
+            <audio data-key="105" src="./audio/T.mp3" id="audio"></audio>
+
+            <button class="secondTap yellow" type="button" data-key="100">4</button>
+            <button class="secondTap yellow" type="button" data-key="101">5</button>
+            <button class="secondTap yellow" type="button" data-key="102">6</button>
+            <audio data-key="100" src="./audio/E.mp3" id="audio"></audio>
+            <audio data-key="101" src="./audio/R.mp3" id="audio"></audio>
+            <audio data-key="102" src="./audio/T.mp3" id="audio"></audio>
+
+            <button class="secondTap blue" type="button" data-key="97">1</button>
+            <button class="secondTap blue" type="button" data-key="98">2</button>
+            <button class="secondTap blue" type="button" data-key="99">3</button>
+            <audio data-key="97" src="./audio/E.mp3" id="audio"></audio>
+            <audio data-key="98" src="./audio/R.mp3" id="audio"></audio>
+            <audio data-key="99" src="./audio/T.mp3" id="audio"></audio>
+        </div>
+    </div>
+    <div class="smallContainer" id="container3">
+        <button type="button" id="changePad" onclick="getNewPad()">Change >></button>
+    </div>
+</body>
+<script src="myDrumJs.js"></script>
+
+</html>
